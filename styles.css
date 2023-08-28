@@ -1,0 +1,10 @@
+.menu-columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-section {
+    flex: 1;
+    padding: 2rem;
+}
+
