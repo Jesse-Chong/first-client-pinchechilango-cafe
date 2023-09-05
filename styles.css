@@ -6,5 +6,8 @@
 .menu-section {
     flex: 1;
     padding: 2rem;
+    background-image: url('El_Pinche_Logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
