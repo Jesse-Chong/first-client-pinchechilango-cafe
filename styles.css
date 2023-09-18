@@ -1,13 +1,48 @@
+body {
+background-color: black;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(190, 7, 7, 0.894);
+    color:hsl(204, 63%, 44%);
+}
+
 .menu-columns {
     display: flex;
     gap: 2rem;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(190, 7, 7, 0.894);
+    color:hsl(204, 63%, 44%);
 }
 
-.menu-section {
+.food-section {
     flex: 1;
+    order: 1;
     padding: 2rem;
-    background-image: url('El_Pinche_Logo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
+.drink-section {
+    flex: 1;
+    order: 2;
+    padding: 2rem;
+}
+
+.drink-image {
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-columns {
+        flex-direction: column;
+    }
+
+    .food-section,
+    .drink-section {
+        order: unset;
+    }
+}
